@@ -1,0 +1,108 @@
+body {
+  font-family: Open Sans;
+  font-weight: 400;
+  margin: 0;
+  height: 100vh;
+}
+
+.form {
+  background-color: #455A64;
+  width: 49%;
+  margin: -2px;
+  display: inline-block;
+  height: 100%;
+}
+
+h1 {
+  color: #FFF;
+  font-weight: 800;
+  text-align: center;
+  width: 96%;
+  font-size: 3em;
+}
+
+.logo {
+  height: .8em;
+}
+
+.title-input,
+.url-input {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  font-size: 1.7em;
+
+}
+
+.add-button {
+  display: block;
+  margin: 0 auto;
+  font-size: 1.01em;
+  width: 80%;
+  font-weight: 800;
+  background-color: #FFC107;
+  color: #FFF;
+  padding: 7px 3px;
+  border: none;
+  text-align: center;
+}
+
+.add-button:hover {
+  background-color: #FFD773;
+  color:  #FFF;
+}
+
+.list {
+  width: 49%;
+  display: inline-block;
+  background-color: #CFD8DC;
+  height: 100%;
+  margin: -2px;
+}
+
+ .bookmark {
+  border: solid;
+  margin: .5em;
+  border-color: #607D8B;
+  background-color: #FFF;
+  margin: auto;
+  width: 90%;
+ }
+
+ h2 {
+  color: #455A64;
+  font-weight: 800;
+  border-bottom: solid;
+  border-bottom-color: #CFD8DC;
+ }
+
+ p {
+  color: #607D8B;
+  border-bottom: solid;
+  border-bottom-color: #CFD8DC;
+  text-decoration: underline, #F2F4F4;
+ }
+
+ .read-btn,
+ .delete-btn {
+  color: #455A64;
+  background-color: inherit;
+  border: none;
+  text-decoration: underline;
+ }
+
+ .read-btn:hover,
+ .delete-btn:hover,
+ p:hover {
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-color: #FFC107;
+ }
+
+.delete-btn:hover {
+  font-weight: 400;
+}
+
+.read {
+  color: #F05A28;
+}
