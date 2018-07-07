@@ -22,3 +22,49 @@ h1 {
   color:  #FFF;
 }
 
+.list {
+  background-color: #CFD8DC;
+}
+
+ .bookmark {
+  border: solid;
+  border-color: #607D8B;
+ }
+
+ h2 {
+  color: #455A64;
+  font-weight: 800;
+  border-bottom: solid;
+  border-bottom-color: #CFD8DC;
+ }
+
+ p {
+  color: #607D8B;
+  border-bottom: solid;
+  border-bottom-color: #CFD8DC;
+  text-decoration: underline, #F2F4F4;
+ }
+
+ .read-btn,
+ .delete-btn {
+  color: #455A64;
+  background-color: inherit;
+  border: none;
+  text-decoration: underline;
+ }
+
+ .read-btn:hover,
+ .delete-btn:hover,
+ p:hover {
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-color: #FFC107;
+ }
+
+.delete-btn:hover {
+  font-weight: 400;
+}
+
+.read {
+  color: #F05A28;
+}
