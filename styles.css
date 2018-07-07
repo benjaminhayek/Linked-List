@@ -1,20 +1,50 @@
 body {
   font-family: Open Sans;
   font-weight: 400;
+  margin: 0;
+  height: 100vh;
 }
 
 .form {
   background-color: #455A64;
+  width: 49%;
+  margin: -2px;
+  display: inline-block;
+  height: 100%;
 }
 
 h1 {
   color: #FFF;
   font-weight: 800;
+  text-align: center;
+  width: 96%;
+  font-size: 3em;
+}
+
+.logo {
+  height: .8em;
+}
+
+.title-input,
+.url-input {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  font-size: 1.7em;
+
 }
 
 .add-button {
+  display: block;
+  margin: 0 auto;
+  font-size: 1.01em;
+  width: 80%;
+  font-weight: 800;
   background-color: #FFC107;
   color: #FFF;
+  padding: 7px 3px;
+  border: none;
+  text-align: center;
 }
 
 .add-button:hover {
@@ -23,12 +53,20 @@ h1 {
 }
 
 .list {
+  width: 49%;
+  display: inline-block;
   background-color: #CFD8DC;
+  height: 100%;
+  margin: -2px;
 }
 
  .bookmark {
   border: solid;
+  margin: .5em;
   border-color: #607D8B;
+  background-color: #FFF;
+  margin: auto;
+  width: 90%;
  }
 
  h2 {
