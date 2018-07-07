@@ -1,0 +1,24 @@
+body {
+  font-family: Open Sans;
+  font-weight: 400;
+}
+
+.form {
+  background-color: #455A64;
+}
+
+h1 {
+  color: #FFF;
+  font-weight: 800;
+}
+
+.add-button {
+  background-color: #FFC107;
+  color: #FFF;
+}
+
+.add-button:hover {
+  background-color: #FFD773;
+  color:  #FFF;
+}
+
