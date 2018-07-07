@@ -3,22 +3,25 @@ body {
   font-weight: 400;
   margin: 0;
   height: 100vh;
+  display: flex;
+  flex-direction: row;
 }
 
 .form {
   background-color: #455A64;
-  width: 49%;
-  margin: -2px;
-  display: inline-block;
+  width: 50%;
+  margin: -2px auto;
   height: 100%;
+}
+.wrapper {
+  margin: 50% auto;
 }
 
 h1 {
   color: #FFF;
   font-weight: 800;
   text-align: center;
-  width: 96%;
-  font-size: 3em;
+  font-size: 5em;
 }
 
 .logo {
@@ -28,9 +31,10 @@ h1 {
 .title-input,
 .url-input {
   display: block;
-  margin: 0 auto;
-  width: 80%;
+  margin: 1.7em auto;
+  width: 90%;
   font-size: 1.7em;
+  padding: 7px;
 
 }
 
@@ -38,11 +42,11 @@ h1 {
   display: block;
   margin: 0 auto;
   font-size: 1.01em;
-  width: 80%;
+  width: 90%;
   font-weight: 800;
   background-color: #FFC107;
   color: #FFF;
-  padding: 7px 3px;
+  padding: 14px 11px;
   border: none;
   text-align: center;
 }
@@ -53,11 +57,12 @@ h1 {
 }
 
 .list {
-  width: 49%;
+  width: 50%;
   display: inline-block;
   background-color: #CFD8DC;
   height: 100%;
   margin: -2px;
+  bottom: 10em;
 }
 
  .bookmark {
@@ -74,13 +79,25 @@ h1 {
   font-weight: 800;
   border-bottom: solid;
   border-bottom-color: #CFD8DC;
+  font-size: 2em;
+  padding: .6em;
+  padding-left: 0;
+  margin: 0 .7em;
+
  }
 
  p {
   color: #607D8B;
   border-bottom: solid;
   border-bottom-color: #CFD8DC;
-  text-decoration: underline, #F2F4F4;
+  text-decoration: underline;
+  text-decoration-color: #F2F4F4;
+  margin: 0 1em;
+  padding: 0.8em 0;
+  font-size: 1.4em;
+ }
+ button {
+  font-size: 1.1em;
  }
 
  .read-btn,
@@ -88,7 +105,12 @@ h1 {
   color: #455A64;
   background-color: inherit;
   border: none;
-  text-decoration: underline;
+  text-decoration: underline #F2F4F4;
+ }
+
+ .delete-btn {
+  float: right;
+  padding-right: 1.2em;
  }
 
  .read-btn:hover,
