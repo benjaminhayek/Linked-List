@@ -12,17 +12,20 @@
       <form>
         <input type="text" id="title" class="title-input" placeholder="Website Title">
         <input type="url" id="url" class="url-input" placeholder="Website URL" required>
-        <input type="bookmark-btn" id="add" class="add-button" value="Add to List">
+        <input type="button" id="add" class="add-button" value="Add to List">
       </form>
     </div>
   </section>
   <section class="list">
     <article class="bookmark">
-      <h2>The Website Title</h2>
-      <p>www.thewebsiteurl.com</p>
-      <button class="read-btn">Read</button>
-      <button class="delete-btn">Delete</button>
+      <h2 class="title-output"></h2>
+      <p class="url-output"></p>
+      <div class="buttons">
+        <button class="read-btn">Read</button>
+        <button class="delete-btn">Delete</button>
+      </div>
     </article>
   </section>
 </body>
+<script src="./script.js"></script>
 </html>
