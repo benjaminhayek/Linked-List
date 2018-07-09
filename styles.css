@@ -60,6 +60,8 @@ h1 {
   background-color: #CFD8DC;
   margin: -2px;
   bottom: 10em;
+  overflow: scroll;
+  max-height: 1054px;
 }
 
  .bookmark {

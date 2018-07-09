@@ -12,17 +12,25 @@ var card = `
       <h2 class="title-output">${title}</h2>
       <p class="url-output">${url}</p>
       <div class="buttons">
-        <button class="read-btn">Read</button>
+        <button class="read-btn" id="red onclick="changeColor()" >Read</button>
         <button class="delete-btn">Delete</button>
       </div>
     </article>
 `
-	cardList.innerHTML += card
-})
+	
+
+  cardList.innerHTML += card
 
 
 
-// function addBookmark()
+});
+
+
+function changeColor() {
+  document.getElementById("red").style.color = "#F05A28";
+}
+
+
 
 
 
