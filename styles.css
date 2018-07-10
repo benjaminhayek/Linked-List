@@ -3,10 +3,10 @@ body {
   font-weight: 400;
   margin: 0;
   display: flex;
+  background-color: #455A64;
 }
 
 .form {
-  background-color: #455A64;
   width: 50%;
   margin: -2px auto;
   height: 100%;
@@ -51,7 +51,6 @@ h1 {
 
 .add-button:hover {
   background-color: #FFD773;
-  color:  #FFF;
 }
 
 .list {
@@ -61,7 +60,6 @@ h1 {
   margin: -2px;
   bottom: 10em;
   overflow: scroll;
-  max-height: 1054px;
 }
 
  .bookmark {
@@ -135,4 +133,26 @@ h1 {
 
 .read {
   color: #F05A28;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+  .form {
+    width: 90%;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  .list {
+    width: 100%;
+  }
+  .title-input,
+  .url-input {
+    font-size: 1em;
+  }
+  .wrapper {
+    margin: 2em 0em;
+  }
 }
