@@ -24,17 +24,29 @@ var card = `
 
   });
 
-page.addEventListener('click', function(event) {
-  if (event.target.className === "read-btn");
+page.addEventListener('click', function() {
+  if (event.target.className === "read-btn") {
   event.target.parentNode.parentNode.classList.toggle("read");
-  event.target.classList.toggle("read");
-  });
+  }
+});
 
-page.addEventListener('click', function(event) {
-  if (event.target.className === "delete-btn");
+page.addEventListener('click', function() {
+  if (event.target.className === "delete-btn") {
   event.target.parentNode.parentNode.remove();
-  });
+  }
+});
 
+titleInput.addEventListener('keyup', addEnable);
+urlInput.addEventListener('keyup', addEnable);
+
+function addEnable() {
+  var inputField = (titleInput.value.length * urlInput.value.length);
+  if (inputField === 0) {
+    addBtn.disabled = true;
+  } else {
+    addBtn.disabled = false;
+  }
+};
 
 
 
