@@ -20,8 +20,8 @@ var card = `
 `
 	
 
-  cardList.innerHTML += card
-
+  cardList.innerHTML += card;
+  countCard();
   });
 
 page.addEventListener('click', function() {
@@ -34,7 +34,7 @@ page.addEventListener('click', function() {
 page.addEventListener('click', function() {
   if (event.target.className === "delete-btn") {
   event.target.parentNode.parentNode.remove();
-  }
+  };
 });
 
 titleInput.addEventListener('keyup', addEnable);
@@ -54,6 +54,11 @@ function countRead() {
   console.log(count);
   var rCounter = document.querySelector(".r-counter");
   rCounter.innerHTML = count;
+}
+
+function countCard() {
+  var cardCount = document.querySelectorAll(".bookmark");
+  console.log(cardCount);
 }
 
 
