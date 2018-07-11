@@ -1,7 +1,8 @@
 var addBtn = document.querySelector(".add-button");
 var urlInput = document.querySelector(".url-input");
 var titleInput = document.querySelector(".title-input");
-var cardList = document.querySelector('.list')
+var cardList = document.querySelector('.list');
+var page = document.querySelector('.list')
 
 addBtn.addEventListener('click', function() {
    var title = titleInput.value;
@@ -12,7 +13,7 @@ var card = `
       <h2 class="title-output">${title}</h2>
       <p class="url-output">${url}</p>
       <div class="buttons">
-        <button class="read-btn" id="red" onclick="changeColor()" >Read</button>
+        <button class="read-btn" id="red">Read</button>
         <button class="delete-btn" id="delete" >Delete</button>
       </div>
     </article>
@@ -21,20 +22,18 @@ var card = `
 
   cardList.innerHTML += card
 
-
-  var deleteBtn = document.getElementById('delete');
-
-  deleteBtn.addEventListener('click', function() {
-    var removeArticle = document.getElementById('bmark');
-    var containerSection = removeArticle.parentNode;
-    containerSection.removeChild(removeArticle);
   });
-});
 
+page.addEventListener('click', function(event) {
+  if (event.target.className === "read-btn");
+  event.target.parentNode.parentNode.classList.toggle("read");
+  event.target.classList.toggle("read");
+  });
 
-function changeColor() {
-  document.getElementById("red").style.color = "#F05A28";
-}
+page.addEventListener('click', function(event) {
+  if (event.target.className === "delete-btn");
+  event.target.parentNode.parentNode.remove();
+  });
 
 
 
