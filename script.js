@@ -57,8 +57,10 @@ function countRead() {
 }
 
 function countCard() {
-  var cardCount = document.querySelectorAll(".bookmark");
+  var cardCount = document.querySelectorAll(".bookmark").length;
   console.log(cardCount);
+  var bCounter = document.querySelector(".b-counter");
+  bCounter.innerHTML = cardCount;
 }
 
 
