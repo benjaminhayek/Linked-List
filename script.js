@@ -52,6 +52,8 @@ function addEnable() {
 function countRead() {
   var count = document.querySelectorAll(".read").length;
   console.log(count);
+  var rCounter = document.querySelector(".r-counter");
+  rCounter.innerHTML = count;
 }
 
 
