@@ -28,6 +28,7 @@ page.addEventListener('click', function() {
   if (event.target.className === "read-btn") {
   event.target.parentNode.parentNode.classList.toggle("read");
   }
+  countRead();
 });
 
 page.addEventListener('click', function() {
@@ -47,6 +48,12 @@ function addEnable() {
     addBtn.disabled = false;
   }
 };
+
+function countRead() {
+  var count = document.querySelectorAll(".read").length;
+  console.log(count);
+}
+
 
 
 
