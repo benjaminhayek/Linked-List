@@ -21,14 +21,15 @@ var card = `
 	
 
   cardList.innerHTML += card;
-  countCard();
+  updateCounts();
   });
 
 page.addEventListener('click', function() {
   if (event.target.className === "read-btn") {
   event.target.parentNode.parentNode.classList.toggle("read");
+  event.target.parentNode.parentNode.classList.toggle("bookmark-clicked");
   }
-  countRead();
+  updateCounts();
 });
 
 page.addEventListener('click', function() {
@@ -54,14 +55,19 @@ function countRead() {
   console.log(count);
   var rCounter = document.querySelector(".r-counter");
   rCounter.innerHTML = count;
-}
+};
 
 function countCard() {
-  var cardCount = document.querySelectorAll(".bookmark");
+  var cardCount = document.querySelectorAll(".bookmark").length;
   console.log(cardCount);
-}
+};
 
+function updateCounts() {
+  var cardCount = document.querySelectorAll(".bookmark");
 
+  countCard();
+  countRead();
+};
 
 
 
