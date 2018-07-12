@@ -1,10 +1,10 @@
 var addBtn = document.querySelector(".add-button");
 var urlInput = document.querySelector(".url-input");
 var titleInput = document.querySelector(".title-input");
-var cardList = document.querySelector('.list');
-var page = document.querySelector('.list')
+var cardList = document.querySelector(".list");
+var page = document.querySelector(".list")
 
-addBtn.addEventListener('click', function() {
+addBtn.addEventListener("click", function() {
    var title = titleInput.value;
    var url = urlInput.value;
    console.log()
@@ -24,7 +24,7 @@ var card = `
   updateCounts();
   });
 
-page.addEventListener('click', function() {
+page.addEventListener("click", function() {
   if (event.target.className === "read-btn") {
   event.target.parentNode.parentNode.classList.toggle("read");
   event.target.parentNode.parentNode.classList.toggle("bookmark-clicked");
@@ -32,14 +32,15 @@ page.addEventListener('click', function() {
   updateCounts();
 });
 
-page.addEventListener('click', function() {
+page.addEventListener("click", function() {
   if (event.target.className === "delete-btn") {
   event.target.parentNode.parentNode.remove();
   };
+  updateCounts();
 });
 
-titleInput.addEventListener('keyup', addEnable);
-urlInput.addEventListener('keyup', addEnable);
+titleInput.addEventListener("keyup", addEnable);
+urlInput.addEventListener("keyup", addEnable);
 
 function addEnable() {
   var inputField = (titleInput.value.length * urlInput.value.length);
@@ -50,29 +51,26 @@ function addEnable() {
   }
 };
 
+
 function countRead() {
   var count = document.querySelectorAll(".read").length;
-  console.log(count);
   var rCounter = document.querySelector(".r-counter");
   rCounter.innerHTML = count;
 };
 
+
 function countCard() {
   var cardCount = document.querySelectorAll(".bookmark").length;
-  console.log(cardCount);
-
   var bCounter = document.querySelector(".b-counter");
   bCounter.innerHTML = cardCount;
-
 };
 
 
 function updateCounts() {
-  var cardCount = document.querySelectorAll(".bookmark");
-
   countCard();
   countRead();
 };
+
 
 
 
