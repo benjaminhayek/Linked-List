@@ -5,11 +5,11 @@ var cardList = document.querySelector('.list');
 var page = document.querySelector('.list')
 
 addBtn.addEventListener('click', function() {
-   var title = titleInput.value;
-   var url = urlInput.value;
-   console.log()
-var card = `
-	<article class="bookmark" id="bmark">
+  var title = titleInput.value;
+  var url = urlInput.value;
+  console.log()
+  var card = `
+	 <article class="bookmark" id="bmark">
       <h2 class="title-output">${title}</h2>
       <p class="url-output">${url}</p>
       <div class="buttons">
@@ -18,8 +18,6 @@ var card = `
       </div>
     </article>
 `
-	
-
   cardList.innerHTML += card;
   updateCounts();
   });
@@ -36,6 +34,7 @@ page.addEventListener('click', function() {
   if (event.target.className === "delete-btn") {
   event.target.parentNode.parentNode.remove();
   };
+  updateCounts();
 });
 
 titleInput.addEventListener('keyup', addEnable);
@@ -60,18 +59,22 @@ function countRead() {
 function countCard() {
   var cardCount = document.querySelectorAll(".bookmark").length;
   console.log(cardCount);
-
   var bCounter = document.querySelector(".b-counter");
   bCounter.innerHTML = cardCount;
-
 };
 
+function countUnread() {
+  var cardCount = document.querySelectorAll(".bookmark");
+  var count = document.querySelectorAll(".read");
+  var uCount = document.querySelector(".u-counter");
+  uCount.innerHTML = cardCount.length - count.length;
+}
 
 function updateCounts() {
   var cardCount = document.querySelectorAll(".bookmark");
-
   countCard();
   countRead();
+  countUnread();
 };
 
 

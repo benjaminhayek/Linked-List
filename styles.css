@@ -12,7 +12,7 @@ body {
   height: 100%;
 }
 .wrapper {
-  margin: 35% auto;
+  margin: 15% auto;
 }
 
 h1 {
@@ -154,6 +154,10 @@ h1 {
 @media screen and (max-width: 600px) {
   body {
     flex-direction: column;
+  }
+  .count-display {
+    margin: 1em;
+    font-size: 1em;
   }
   .form {
     width: 90%;
