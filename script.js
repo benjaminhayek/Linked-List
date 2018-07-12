@@ -4,12 +4,14 @@ var titleInput = document.querySelector(".title-input");
 var cardList = document.querySelector(".list");
 var page = document.querySelector(".list")
 
+
 addBtn.addEventListener("click", function() {
    var title = titleInput.value;
    var url = urlInput.value;
    console.log()
 var card = `
 	<article class="bookmark" id="bmark">
+
       <h2 class="title-output">${title}</h2>
       <p class="url-output">${url}</p>
       <div class="buttons">
@@ -18,8 +20,6 @@ var card = `
       </div>
     </article>
 `
-	
-
   cardList.innerHTML += card;
   updateCounts();
   });
@@ -65,10 +65,17 @@ function countCard() {
   bCounter.innerHTML = cardCount;
 };
 
+function countUnread() {
+  var cardCount = document.querySelectorAll(".bookmark");
+  var count = document.querySelectorAll(".read");
+  var uCount = document.querySelector(".u-counter");
+  uCount.innerHTML = cardCount.length - count.length;
+}
 
 function updateCounts() {
   countCard();
   countRead();
+  countUnread();
 };
 
 

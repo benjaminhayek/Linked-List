@@ -6,9 +6,11 @@ body {
   background-color: #455A64;
 }
 
+
  button {
   font-size: 1.1em;
  }
+
 
  h1 {
   color: #FFF;
@@ -150,12 +152,16 @@ body {
  }
 
 .wrapper {
-  margin: 35% auto;
+  margin: 15% auto;
 }
 
 @media screen and (max-width: 600px) {
   body {
     flex-direction: column;
+  }
+  .count-display {
+    margin: 1em;
+    font-size: 1em;
   }
   .form {
     width: 90%;
